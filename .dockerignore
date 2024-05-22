@@ -1,0 +1,27 @@
+# Dot files and folders
+.git
+.gitignore
+.DS_Store
+.editorconfig
+.dockerignore
+
+# IDE and editors
+.vscode
+.idea
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Testing
+coverage/
+
+# Readme
+README.md
+docs
+
+# Docker files
+docker-compose.yml
+Dockerfile

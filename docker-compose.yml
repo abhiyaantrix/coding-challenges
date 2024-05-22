@@ -1,0 +1,23 @@
+services:
+  guard:
+    build:
+      context: .
+    command: guard --no-interactions
+    entrypoint: ./docker-entrypoint.sh
+    volumes:
+      - bundle_cache:/bundle
+    networks:
+      - coding_challenges_network
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /coding-challenges
+        - action: rebuild
+          path: Gemfile
+
+volumes:
+  bundle_cache:
+
+networks:
+  coding_challenges_network:
