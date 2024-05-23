@@ -16,6 +16,17 @@ services:
         - action: rebuild
           path: Gemfile
 
+  test:
+    build:
+      context: .
+    command: rspec
+    entrypoint: ./docker-entrypoint.sh
+    volumes:
+      - .:/coding-challenges
+      - bundle_cache:/bundle
+    networks:
+      - coding_challenges_network
+
 volumes:
   bundle_cache:
 
