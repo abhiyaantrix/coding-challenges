@@ -4,6 +4,8 @@ A repository of coding challenges solved using Ruby
 
 Each example is supported by test cases written with RSpec
 
+Main: [![CI Main](https://github.com/abhiyaantrix/coding-challenges/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/abhiyaantrix/coding-challenges/actions)
+
 ## How to run
 
 Prerequisite, [Docker](https://docs.docker.com/get-docker/)
@@ -24,6 +26,9 @@ docker compose up --build
 
 # or to force recreation
 docker compose up --build --force-recreate
+
+# Run one off specs
+docker compose run test rspec
 ```
 
 ## Code coverage

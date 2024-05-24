@@ -13,11 +13,20 @@ describe DeepFlattenHash do
     end
   end
 
+  context 'when nested hash' do
+    let(:hash) { { a: 'foo', b: 'bar', c: { d: 'baz' } } }
+    let(:expected_flattened_hash) { { a: 'foo', b: 'bar', c_d: 'baz' } }
+
+    it 'flattens nested hash with composed keys' do
+      expect(deep_flatten_hash.call(hash)).to eq(expected_flattened_hash)
+    end
+  end
+
   context 'when deeply nested hash' do
     let(:hash) { { a: { b: { c: 42, d: 'foo' }, d: 'bar' }, e: 'baz', f: { b: { a: [1, 2, 3] } } } }
     let(:expected_flattened_hash) { { a_b_c: 42, a_b_d: 'foo', a_d: 'bar', e: 'baz', f_b_a: [1, 2, 3] } }
 
-    it 'flattens the deeply nested hash with composed keys' do
+    it 'flattens deeply nested hash with composed keys' do
       expect(deep_flatten_hash.call(hash)).to eq(expected_flattened_hash)
     end
   end
