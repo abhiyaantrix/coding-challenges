@@ -36,10 +36,14 @@ WORKDIR $APP_HOME
 # RUN useradd -ms /bin/sh -u 1000 appuser
 RUN addgroup -g 1000 -S appgroup && adduser -u 1000 -S appuser -G appgroup
 
-# Switch to app user
-USER appuser
+RUN mkdir -p $APP_HOME/coverage $APP_HOME/log $APP_HOME/tmp
 
 COPY --chown=appuser:appgroup . $APP_HOME
 COPY --chown=appuser:appgroup --from=build $BUNDLE_PATH $BUNDLE_PATH
+
+RUN chown -R appuser:appgroup $APP_HOME
+
+# Switch to app user
+USER appuser
 
 CMD ["rspec"]

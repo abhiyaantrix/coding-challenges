@@ -23,6 +23,7 @@ services:
     entrypoint: ./docker-entrypoint.sh
     volumes:
       - .:/coding-challenges
+      - ./coverage:/coding-challenges/coverage
       - bundle_cache:/bundle
     networks:
       - coding_challenges_network

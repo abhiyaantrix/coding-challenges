@@ -6,9 +6,11 @@ AllCops:
   TargetRubyVersion: 3.3.1
   NewCops: enable
   Exclude:
+    - 'log/**/*'
     - 'tmp/**/*'
     - '.git/**/*'
     - '.bundle/**/*'
+    - 'vendor/**/*'
 
 # Ruby 3.3 call to `it` without arguments in block with no ordinary parameters are deprecated.
 # In Ruby 3.4, it will refer to the first block parameter.
