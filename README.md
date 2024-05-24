@@ -6,9 +6,9 @@ Each example is supported by test cases written with RSpec
 
 Main: [![CI Main](https://github.com/abhiyaantrix/coding-challenges/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/abhiyaantrix/coding-challenges/actions)
 
-[![codecov](https://app.codecov.io/gh/abhiyaantrix/coding-challenges/graph/badge.svg?token=6FZMNR342K)](https://app.codecov.io/gh/abhiyaantrix/coding-challenges)
+[![codecov](https://codecov.io/gh/abhiyaantrix/coding-challenges/graph/badge.svg?token=6FZMNR342K)](https://codecov.io/gh/abhiyaantrix/coding-challenges)
 
-![codecov graph](https://app.codecov.io/gh/abhiyaantrix/coding-challenges/graphs/tree.svg?token=6FZMNR342K)
+![codecov graph](https://codecov.io/gh/abhiyaantrix/coding-challenges/graphs/tree.svg?token=6FZMNR342K)
 
 ## How to run
 
