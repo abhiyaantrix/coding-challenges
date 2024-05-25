@@ -1,0 +1,59 @@
+{
+  "name": "coding-challenges",
+  "version": "1.0.0",
+  "description": "Personal coding challenges project",
+  "keywords": [
+    "coding",
+    "challenges",
+    "data",
+    "structures",
+    "algorithms"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhiyaantrix/coding-challenges.git"
+  },
+  "author": "Chetan Patil",
+  "type": "module",
+  "scripts": {
+    "lint": "npm run prettier && npm run lint:js",
+    "lint:commit": "commitlint --from=HEAD~1",
+    "lint:fix": "npm run prettier:fix && npm run lint:js:fix",
+    "lint:js": "eslint .",
+    "lint:js:fix": "eslint . --fix",
+    "pre-commit": "lint-staged",
+    "prepare": "husky",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "rubocop": "rubocop",
+    "rubocop:fix": "rubocop -A",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "./**/*.{json,md,yml,yaml,sh,xml,svg,html,Dockerfile}": [
+      "prettier --write"
+    ],
+    "*.{rb,ru}": [
+      "npm run rubocop:fix"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@eslint/js": "^9.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "prettier": "^3.2.5",
+    "prettier-plugin-packagejson": "^2.5.0",
+    "prettier-plugin-sh": "^0.14.0",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.10.0"
+  },
+  "engines": {
+    "node": "22.x",
+    "npm": "10.x"
+  }
+}

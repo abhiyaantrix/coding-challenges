@@ -20,3 +20,4 @@
 
 ## Environment normalization:
 /.bundle/
+node_modules/

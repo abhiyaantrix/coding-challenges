@@ -11,17 +11,17 @@ WORKDIR $APP_HOME
 COPY Gemfile* ./
 
 ENV BUNDLE_PATH=/bundle \
-    BUNDLE_BIN=/bundle/bin \
-    GEM_HOME=/bundle \
-    PATH="${BUNDLE_BIN}:${PATH}"
+  BUNDLE_BIN=/bundle/bin \
+  GEM_HOME=/bundle \
+  PATH="${BUNDLE_BIN}:${PATH}"
 
-RUN gem update --system && \
-    gem install bundler -v "${BUNDLE_VERSION}" --no-document && \
-    bundle config set no-cache 'true' && \
-    bundle config set clean 'true' && \
-    bundle install --jobs "$(nproc)" --retry 3 && \
-    apk del build-dependencies && \
-    rm -rf /var/cache/apk/* /usr/lib/ruby/gems/*/cache/*
+RUN gem update --system \
+  && gem install bundler -v "${BUNDLE_VERSION}" --no-document \
+  && bundle config set no-cache 'true' \
+  && bundle config set clean 'true' \
+  && bundle install --jobs "$(nproc)" --retry 3 \
+  && apk del build-dependencies \
+  && rm -rf /var/cache/apk/* /usr/lib/ruby/gems/*/cache/*
 
 # Runtime stage
 FROM ruby:3-alpine

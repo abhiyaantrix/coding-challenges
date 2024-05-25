@@ -42,24 +42,23 @@ and can be found in [coverage](coverage/index.html) folder after executing specs
 
 ## Exercises
 
-* Factorial
-* Caesar Cipher
-    * A simple implementation of the basic encryption technique
-    * Supports alphanumeric and special characters in the range a..z, A..Z, 0..9, !..?, µ..ö
-* Longest word calculator
-    * Find longest word in a sentence with a choice of separator, default is a whitespace
-    * Find longest work in a collection (array of words)
-* Hash
-    * Flatten a deeply nested hash with composed keys
-* Number
-    * Round up or down a number to the nearest multiple of given number
-        * For simplicity only tested with integer numbers
-        * Supports both positive and negative number
-        * Separately round up, down or auto
-* Find max consecutive 1's in binary array
-* Count numbers with even number of digits in an array
-* Create sorted array of squares of all integers in given sorted array
-* Duplicate 0's in given array without changing it's size
-* Merge two sorted arrays into a new combined sorted array
-* Delete all instances of given number from an array
-
+- Factorial
+- Caesar Cipher
+  - A simple implementation of the basic encryption technique
+  - Supports alphanumeric and special characters in the range a..z, A..Z, 0..9, !..?, µ..ö
+- Longest word calculator
+  - Find longest word in a sentence with a choice of separator, default is a whitespace
+  - Find longest work in a collection (array of words)
+- Hash
+  - Flatten a deeply nested hash with composed keys
+- Number
+  - Round up or down a number to the nearest multiple of given number
+    - For simplicity only tested with integer numbers
+    - Supports both positive and negative number
+    - Separately round up, down or auto
+- Find max consecutive 1's in binary array
+- Count numbers with even number of digits in an array
+- Create sorted array of squares of all integers in given sorted array
+- Duplicate 0's in given array without changing it's size
+- Merge two sorted arrays into a new combined sorted array
+- Delete all instances of given number from an array
