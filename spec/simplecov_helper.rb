@@ -6,6 +6,7 @@ require 'simplecov-cobertura'
 
 SimpleCov.start do
   add_filter '/spec/'
+  coverage_dir 'coverage-rspec'
 
   track_files '**/*.rb'
 

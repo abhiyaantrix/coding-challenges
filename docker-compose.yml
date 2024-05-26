@@ -8,7 +8,7 @@ services:
     command: guard --no-interactions
     volumes:
       - bundle_cache:/bundle
-      - ./coverage:/coding-challenges/coverage
+      - ./coverage-rspec:/coding-challenges/coverage-rspec
     networks:
       - coding_challenges_network
     develop:
@@ -28,6 +28,7 @@ services:
     command: npm run test:watch
     volumes:
       - node_modules_cache:/coding-challenges/node_modules
+      - ./coverage-jest:/coding-challenges/coverage-jest
     networks:
       - coding_challenges_network
     develop:

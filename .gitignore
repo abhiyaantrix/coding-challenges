@@ -1,6 +1,6 @@
 *.gem
 *.rbc
-/coverage/
+/coverage-*/
 /spec/reports/
 /spec/examples.txt
 /tmp/
@@ -21,3 +21,4 @@
 ## Environment normalization:
 /.bundle/
 node_modules/
+vendor

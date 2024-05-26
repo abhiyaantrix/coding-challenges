@@ -40,8 +40,11 @@ docker compose run typescript-test npm test
 
 ## Code coverage
 
-Code coverage is supported by [simplecov gem](https://github.com/simplecov-ruby/simplecov)
-and can be found in [coverage](coverage/index.html) folder after executing specs
+Ruby Code coverage is supported by [simplecov gem](https://github.com/simplecov-ruby/simplecov)
+and can be found in [coverage-rspec](coverage-rspec/index.html) folder after executing specs
+
+TypeScript Code coverage is supported by [Jest](https://jestjs.io/)
+and can be found in [coverage-jest](coverage-jest/index.html) folder after executing specs
 
 ## Exercises
 

@@ -4,6 +4,8 @@ export default {
   preset: 'ts-jest',
   testEnvironment: 'node',
   testRegex: '\\.spec\\.ts$',
+  coverageDirectory: 'coverage-jest',
+  coverageReporters: ['json', 'html', 'lcov', 'text', 'clover'],
   testPathIgnorePatterns: ['/node_modules/'],
   moduleFileExtensions: ['ts', 'js'],
   transform: {

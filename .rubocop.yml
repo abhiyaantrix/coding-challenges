@@ -12,7 +12,8 @@ AllCops:
     - '.bundle/**/*'
     - 'vendor/**/*'
     - 'node_modules/**/*'
-    - 'coverage/**/*'
+    - 'coverage-rspec/**/*'
+    - 'coverage-jest/**/*'
     - 'Dockerfile.ruby'
     - 'Dockerfile.nodejs'
 # Ruby 3.3 call to `it` without arguments in block with no ordinary parameters are deprecated.

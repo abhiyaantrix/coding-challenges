@@ -1,0 +1,18 @@
+name: 'Prepares for Ruby and install gems'
+description: 'This workflow prepares job to execute ruby script commands like `bundle exec rspec`, `bundle exec rubocop`'
+
+runs:
+  using: composite
+  steps:
+    - name: Setup Ruby and install gems ⚙️
+      uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+
+    - name: Print Ruby and bundle context 📝
+      run: |
+        echo "Expected Ruby version: $(cat .ruby-version)"
+        echo "Actual ruby version: $(ruby -v)"
+        echo "Expected Bundle version: $(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1 | sed 's/^[[:space:]]*//')"
+        echo "Actual Bundle version: $(bundle -v)"
+      shell: bash

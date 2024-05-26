@@ -16,7 +16,7 @@
 !/tmp/.keep
 
 # Testing
-coverage/
+coverage-*/
 
 # Readme
 README.md

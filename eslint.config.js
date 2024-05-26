@@ -50,6 +50,16 @@ export default tseslint.config(
     },
   },
   {
-    ignores: ['node_modules', 'coverage', '.byebug_history', '*.rb', 'tmp', 'log'],
+    ignores: [
+      'node_modules',
+      'coverage-*/',
+      'coverage-jest',
+      '.byebug_history',
+      '*.rb',
+      'tmp',
+      'log',
+      'vendor',
+      '.bundle',
+    ],
   }
 );

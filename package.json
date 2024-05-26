@@ -25,9 +25,9 @@
     "prepare": "husky",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
-    "rubocop": "rubocop",
-    "rubocop:fix": "rubocop -A",
-    "test": "jest",
+    "rubocop": "bundle exec rubocop --parallel --extra-details --display-time --color --format github --cache true",
+    "rubocop:fix": "bundle exec rubocop -A --parallel --extra-details --display-time --color --cache true",
+    "test": "jest --collect-coverage",
     "test:watch": "jest --watch"
   },
   "lint-staged": {

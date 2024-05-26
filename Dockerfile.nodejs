@@ -31,7 +31,7 @@ RUN npm install -g npm@latest
 RUN addgroup -g 1001 -S appgroup && adduser -u 1001 -S appuser -G appgroup
 
 # Create necessary directories
-RUN mkdir -p $APP_HOME/coverage $APP_HOME/log $APP_HOME/tmp
+RUN mkdir -p $APP_HOME/coverage-jest $APP_HOME/log $APP_HOME/tmp
 
 # Copy application code and installed dependencies
 COPY --chown=appuser:appgroup . $APP_HOME

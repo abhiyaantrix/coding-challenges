@@ -38,7 +38,7 @@ WORKDIR $APP_HOME
 # RUN useradd -ms /bin/sh -u 1000 appuser
 RUN addgroup -g 1000 -S appgroup && adduser -u 1000 -S appuser -G appgroup
 
-RUN mkdir -p $APP_HOME/coverage $APP_HOME/log $APP_HOME/tmp
+RUN mkdir -p $APP_HOME/coverage-rspec $APP_HOME/log $APP_HOME/tmp
 
 COPY --chown=appuser:appgroup . $APP_HOME
 COPY --chown=appuser:appgroup --from=build $BUNDLE_PATH $BUNDLE_PATH
