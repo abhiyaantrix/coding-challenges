@@ -1,5 +1,5 @@
 # Dot files and folders
-.git
+# .git # Jest needs this to run tests in watch mode :-(
 .gitignore
 .DS_Store
 .editorconfig

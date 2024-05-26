@@ -11,7 +11,10 @@ AllCops:
     - '.git/**/*'
     - '.bundle/**/*'
     - 'vendor/**/*'
-
+    - 'node_modules/**/*'
+    - 'coverage/**/*'
+    - 'Dockerfile.ruby'
+    - 'Dockerfile.nodejs'
 # Ruby 3.3 call to `it` without arguments in block with no ordinary parameters are deprecated.
 # In Ruby 3.4, it will refer to the first block parameter.
 # This cop will have to be updated to `EnforcedStyle: block_parameters`

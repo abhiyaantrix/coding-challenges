@@ -1,0 +1,47 @@
+# NOTE: Development only image, git folder is copied in this image for Jest to run watch mode :-(
+
+# Build stage
+FROM node:22-alpine AS build
+
+# Install dependencies for building Node.js packages
+RUN apk --no-cache add --virtual build-dependencies build-base
+
+ENV APP_HOME /coding-challenges
+WORKDIR $APP_HOME
+
+# Copy package.json and package-lock.json files
+COPY package*.json ./
+
+# Install Node.js packages
+RUN npm install -g npm@latest && npm install
+
+# Runtime stage
+FROM node:22-alpine
+
+# Install git for Jest to run watch mode :-(
+RUN apk --no-cache add git
+
+ENV APP_HOME /coding-challenges
+WORKDIR $APP_HOME
+
+# Install latest version of npm
+RUN npm install -g npm@latest
+
+# Create group and user with specific UID/GID
+RUN addgroup -g 1001 -S appgroup && adduser -u 1001 -S appuser -G appgroup
+
+# Create necessary directories
+RUN mkdir -p $APP_HOME/coverage $APP_HOME/log $APP_HOME/tmp
+
+# Copy application code and installed dependencies
+COPY --chown=appuser:appgroup . $APP_HOME
+COPY --chown=appuser:appgroup --from=build $APP_HOME/node_modules $APP_HOME/node_modules
+
+# Ensure correct ownership of application files
+RUN chown -R appuser:appgroup $APP_HOME
+
+# Switch to app user
+USER appuser
+
+# Set the default command
+CMD ["npm", "test"]

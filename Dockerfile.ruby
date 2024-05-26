@@ -1,3 +1,5 @@
+# NOTE: Development only image, .git folder is copied in this image
+
 # Build stage
 FROM ruby:3-alpine AS build
 

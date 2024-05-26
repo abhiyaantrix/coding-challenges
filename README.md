@@ -15,8 +15,10 @@ Main: [![CI Main](https://github.com/abhiyaantrix/coding-challenges/actions/work
 Prerequisite, [Docker](https://docs.docker.com/get-docker/)
 
 ```bash
-docker build . -t coding-challenges
-docker run --rm coding-challenges
+docker build . -t coding-challenges/ruby:latest -f Dockerfile.ruby
+docker build . -t coding-challenges/typescript:latest -f Dockerfile.nodejs
+docker run --rm coding-challenges/ruby:latest
+docker run --rm coding-challenges/typescript:latest
 ```
 
 Execute in watch mode with [Guard gem](https://github.com/guard/guard)
@@ -29,10 +31,11 @@ docker compose up
 docker compose up --build
 
 # or to force recreation
-docker compose up --build --force-recreate
+docker compose up --build --force-recreate --remove-orphans
 
 # Run one off specs
-docker compose run test rspec
+docker compose run ruby-test rspec
+docker compose run typescript-test npm test
 ```
 
 ## Code coverage

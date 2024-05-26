@@ -1,11 +1,14 @@
 services:
-  guard:
+  ruby-test:
     build:
       context: .
+      dockerfile: Dockerfile.ruby
+    image: coding-challenges/ruby:latest
+    entrypoint: ./docker-entrypoint-ruby.sh
     command: guard --no-interactions
-    entrypoint: ./docker-entrypoint.sh
     volumes:
       - bundle_cache:/bundle
+      - ./coverage:/coding-challenges/coverage
     networks:
       - coding_challenges_network
     develop:
@@ -16,20 +19,28 @@ services:
         - action: rebuild
           path: Gemfile
 
-  test:
+  typescript-test:
     build:
       context: .
-    command: rspec
-    entrypoint: ./docker-entrypoint.sh
+      dockerfile: Dockerfile.nodejs
+    image: coding-challenges/typescript:latest
+    entrypoint: ./docker-entrypoint-nodejs.sh
+    command: npm run test:watch
     volumes:
-      - .:/coding-challenges
-      - ./coverage:/coding-challenges/coverage
-      - bundle_cache:/bundle
+      - node_modules_cache:/coding-challenges/node_modules
     networks:
       - coding_challenges_network
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /coding-challenges
+        - action: rebuild
+          path: package.json
 
 volumes:
   bundle_cache:
+  node_modules_cache:
 
 networks:
   coding_challenges_network:
