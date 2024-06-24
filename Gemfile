@@ -9,7 +9,7 @@ gem 'rubocop', '~> 1'
 # Check for performance optimizations
 gem 'rubocop-performance'
 # RuboCop extension focused on enforcing RSpec best practices and coding conventions
-gem 'rubocop-rspec', '~> 2'
+gem 'rubocop-rspec', '~> 3'
 
 # Testing
 gem 'rspec', '~> 3'
