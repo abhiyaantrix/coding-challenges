@@ -53,8 +53,8 @@
     "prettier-plugin-packagejson": "^2.5.0",
     "prettier-plugin-sh": "^0.14.0",
     "ts-jest": "^29.1.5",
-    "typescript": "^5.4.5",
-    "typescript-eslint": "^7.13.1"
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^7.14.1"
   },
   "engines": {
     "node": "22.x",
