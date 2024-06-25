@@ -3,7 +3,7 @@
 export default {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  testRegex: '\\.spec\\.ts$',
+  testRegex: '_spec\\.ts$',
   coverageDirectory: 'coverage-jest',
   coverageReporters: ['json', 'html', 'lcov', 'text', 'clover'],
   testPathIgnorePatterns: ['/node_modules/'],

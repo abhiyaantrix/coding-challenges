@@ -38,12 +38,6 @@ export default tseslint.config(
         },
       ],
       'no-param-reassign': 'warn',
-      'no-plusplus': [
-        'error',
-        {
-          allowForLoopAfterthoughts: true,
-        },
-      ],
       'object-curly-newline': 'off',
       'object-curly-spacing': ['error', 'always'],
       'eol-last': ['error', 'always'],

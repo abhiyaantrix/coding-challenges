@@ -21,7 +21,7 @@ docker run --rm coding-challenges/ruby:latest
 docker run --rm coding-challenges/typescript:latest
 ```
 
-Execute in watch mode with [Guard gem](https://github.com/guard/guard)
+Execute in watch mode with [Guard gem](https://github.com/guard/guard), [Jest](https://jestjs.io/)
 and `docker compose`
 
 ```bash
