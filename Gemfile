@@ -31,3 +31,11 @@ gem 'guard-rubocop', '~> 1.4'
 gem 'test-prof'
 # ruby-prof is a profiler for MRI Ruby
 gem 'ruby-prof'
+
+# Debugging
+gem 'debug', '~> 1.9'
+gem 'pry', '~> 0.14.2'
+gem 'pry-doc', '~> 1.5'
+gem 'pry-nav', '~> 1.0'
+gem 'pry-rescue', '~> 1.6'
+gem 'pry-stack_explorer', '~> 0.6.1'

@@ -10,11 +10,11 @@ SimpleCov.start do
 
   track_files '**/*.rb'
 
-  SimpleCov::Formatter::Console.max_rows = 5
-  SimpleCov::Formatter::Console.output_style = 'block'
+  # SimpleCov::Formatter::Console.max_rows = 5
+  # SimpleCov::Formatter::Console.output_style = 'block'
 
   formatter SimpleCov::Formatter::MultiFormatter.new([
-    SimpleCov::Formatter::Console,
+    # SimpleCov::Formatter::Console,
     SimpleCov::Formatter::HTMLFormatter,
     SimpleCov::Formatter::CoberturaFormatter
   ])
