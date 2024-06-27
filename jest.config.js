@@ -8,6 +8,7 @@ export default {
   coverageReporters: ['json', 'html', 'lcov', 'text', 'clover'],
   testPathIgnorePatterns: ['/node_modules/'],
   moduleFileExtensions: ['ts', 'js'],
+  verbose: true,
   transform: {
     '^.+\\.(ts)$': [
       'ts-jest',
