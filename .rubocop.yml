@@ -42,6 +42,10 @@ Metrics/ClassLength:
   Max: 300
 Metrics/ModuleLength:
   Max: 150
+Metrics/CyclomaticComplexity:
+  Max: 10
+Metrics/PerceivedComplexity:
+  Max: 10
 
 # Layout
 Layout/LineLength:
