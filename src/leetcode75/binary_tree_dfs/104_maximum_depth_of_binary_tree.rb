@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# TreeNode => src/leetcode75/binary_tree_dfs/tree_node.rb
+# TreeNode => src/leetcode75/data_structures/tree_node.rb
 
 # Given a binary tree, find its maximum depth
 # https://leetcode.com/problems/maximum-depth-of-binary-tree/description/?envType=study-plan-v2&envId=leetcode-75

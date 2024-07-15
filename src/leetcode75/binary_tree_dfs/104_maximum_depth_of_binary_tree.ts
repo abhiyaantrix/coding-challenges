@@ -1,4 +1,4 @@
-import TreeNode from './tree_node';
+import TreeNode from '../data_structures/tree_node';
 
 // Given a binary tree, find its maximum depth
 // https://leetcode.com/problems/maximum-depth-of-binary-tree/description/?envType=study-plan-v2&envId=leetcode-75

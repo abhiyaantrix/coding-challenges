@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# TreeNode => src/leetcode75/binary_tree_dfs/tree_node.rb
+# TreeNode => src/leetcode75/data_structures/tree_node.rb
 
 # 872. Leaf-Similar Trees
 # https://leetcode.com/problems/leaf-similar-trees/?envType=study-plan-v2&envId=leetcode-75

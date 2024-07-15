@@ -1,4 +1,4 @@
-import TreeNode from './tree_node';
+import TreeNode from '../data_structures/tree_node';
 
 // 872. Leaf-Similar Trees
 // https://leetcode.com/problems/leaf-similar-trees/?envType=study-plan-v2&envId=leetcode-75
