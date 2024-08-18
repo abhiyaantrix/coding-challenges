@@ -39,7 +39,12 @@ const binarySearchByIteration: BinarySearchByIteration = (array, target, occurre
       // Avoid integer overflow, using (left + right) / 2 will cause overflow if result is too large
       // Though this is not a big concern in Ruby since it will automatically convert to big integer
       result = mid;
-      occurrence === 'first' ? (right = mid - 1) : (left = mid + 1);
+
+      if (occurrence === 'first') {
+        right = mid - 1;
+      } else {
+        left = mid + 1;
+      }
     } else if (array[mid] < target) {
       left = mid + 1;
     } else {

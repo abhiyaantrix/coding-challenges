@@ -179,19 +179,19 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  debug (~> 1.9)
-  faker (~> 3)
-  guard-rspec (~> 4.7)
+  debug (~> 1.9.2)
+  faker (~> 3.4.2)
+  guard-rspec (~> 4.7.3)
   guard-rubocop (~> 1.5)
-  pry (~> 0.14)
+  pry (~> 0.14.2)
   pry-doc (~> 1.5)
   pry-nav (~> 1.0)
   pry-rescue (~> 1.6)
-  pry-stack_explorer (~> 0.6)
-  rspec (~> 3)
-  rubocop (~> 1)
+  pry-stack_explorer (~> 0.6.1)
+  rspec (~> 3.13.0)
+  rubocop (~> 1.65.1)
   rubocop-performance
-  rubocop-rspec (~> 3)
+  rubocop-rspec (~> 3.0.4)
   ruby-prof
   simplecov (~> 0.22)
   simplecov-cobertura

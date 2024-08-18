@@ -33,7 +33,6 @@ const rightSideView = (root: TreeNode | null): number[] => {
   while (queue.length > 0) {
     const queueLength = queue.length;
 
-    // eslint-disable-next-line @typescript-eslint/prefer-for-of
     for (let i = 0; i < queueLength; i++) {
       node = queue.shift();
 

@@ -33,7 +33,6 @@ const maxLevelSum = (root: TreeNode | null): number => {
 
     const queueLength = queue.length;
 
-    // eslint-disable-next-line @typescript-eslint/prefer-for-of
     for (let i = 0; i < queueLength; i++) {
       const node = queue.shift();
 

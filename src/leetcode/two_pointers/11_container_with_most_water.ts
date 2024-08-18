@@ -41,7 +41,11 @@ const maxArea = (height: number[]): number => {
     const area = (secondBoundary - firstBoundary) * Math.min(secondBoundHeight, firstBoundHeight);
     maxArea = Math.max(maxArea, area);
 
-    firstBoundHeight < secondBoundHeight ? firstBoundary++ : secondBoundary--;
+    if (firstBoundHeight < secondBoundHeight) {
+      firstBoundary++;
+    } else {
+      secondBoundary--;
+    }
   }
 
   return maxArea;
