@@ -11,7 +11,7 @@ gem 'rubocop', '~> 1.65.1'
 # Check for performance optimizations
 gem 'rubocop-performance'
 # RuboCop extension focused on enforcing RSpec best practices and coding conventions
-gem 'rubocop-rspec', '~> 3.0.4'
+gem 'rubocop-rspec', '~> 3.0.5'
 # language server that provides intellisense, code completion, and inline documentation for Ruby
 gem 'solargraph', '~> 0.50.0'
 
