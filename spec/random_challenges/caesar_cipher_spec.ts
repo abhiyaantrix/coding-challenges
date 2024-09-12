@@ -1,4 +1,4 @@
-import { encode, decode } from '../src/caesar_cipher';
+import { encode, decode } from '../../src/random_challenges/caesar_cipher';
 
 const testCases = [
   { text: 'Hello World', expectedCipheredText: 'Ebiil7Tloia', shift: 3 },

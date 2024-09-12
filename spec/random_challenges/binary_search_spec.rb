@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/binary_search'
+require_relative '../../src/random_challenges/binary_search'
 
 describe BinarySearch do
   subject(:binary_search) { ->(array) { described_class.new(array) } }

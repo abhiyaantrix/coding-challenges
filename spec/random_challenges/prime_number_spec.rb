@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/prime_number'
+require_relative '../../src/random_challenges/prime_number'
 
 describe PrimeNumber do
   subject(:prime_number_checker) { described_class.new }

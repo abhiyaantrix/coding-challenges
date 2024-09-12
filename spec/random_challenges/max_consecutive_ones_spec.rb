@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/max_consecutive_ones'
+require_relative '../../src/random_challenges/max_consecutive_ones'
 
 describe MaxConsecutiveOnes do
   subject(:find_max_consecutive_ones) { ->(arr) { described_class.find(arr) } }

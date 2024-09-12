@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/longest_word'
+require_relative '../../src/random_challenges/longest_word'
 
 describe LongestWord do
   subject(:longest_word_calculator) { described_class.new }

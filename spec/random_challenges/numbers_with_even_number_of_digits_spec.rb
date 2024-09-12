@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/numbers_with_even_number_of_digits'
+require_relative '../../src/random_challenges/numbers_with_even_number_of_digits'
 
 describe NumbersWithEvenNumberOfDigits do
   subject(:numbers_with_even_number_of_digits) { ->(nums) { described_class.count(nums) } }

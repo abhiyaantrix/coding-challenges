@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/deep_flatten_hash'
+require_relative '../../src/random_challenges/deep_flatten_hash'
 
 describe DeepFlattenHash do
   subject(:deep_flatten_hash) { ->(hash) { described_class.new.call(hash) } }

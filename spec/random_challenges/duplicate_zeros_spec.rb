@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/duplicate_zeros'
+require_relative '../../src/random_challenges/duplicate_zeros'
 
 describe DuplicateZeros do
   subject(:duplicate_zeros) { ->(arr) { described_class.call(arr) } }

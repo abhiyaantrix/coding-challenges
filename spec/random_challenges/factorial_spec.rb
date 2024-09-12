@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/factorial'
+require_relative '../../src/random_challenges/factorial'
 
 describe Factorial do
   subject(:calculator) { described_class.new }

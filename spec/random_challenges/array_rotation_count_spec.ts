@@ -1,4 +1,4 @@
-import arrayRotationCount from '../src/array_rotation_count';
+import arrayRotationCount from '../../src/random_challenges/array_rotation_count';
 
 describe('arrayRotationCount', () => {
   const testCases: [number[], number][] = [
