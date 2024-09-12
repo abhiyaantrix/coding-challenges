@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/caesar_cipher'
+require_relative '../../src/random_challenges/caesar_cipher'
 
 describe CaesarCipher do
   subject(:caesar_cipher_creator) { ->(shift) { described_class.new(shift:) } }
