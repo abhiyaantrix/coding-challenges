@@ -1,14 +1,9 @@
 # Coding Challenges
 
-A repository of coding challenges solved using Ruby
+A repository of coding challenges solved using Ruby and TypeScript.
 
-Each example is supported by test cases written with RSpec
-
-Main: [![CI Main](https://github.com/abhiyaantrix/coding-challenges/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/abhiyaantrix/coding-challenges/actions)
-
-[![codecov](https://codecov.io/gh/abhiyaantrix/coding-challenges/graph/badge.svg?token=6FZMNR342K)](https://codecov.io/gh/abhiyaantrix/coding-challenges)
-
-![codecov graph](https://codecov.io/gh/abhiyaantrix/coding-challenges/graphs/tree.svg?token=6FZMNR342K)
+I have created this repository to keep backup of coding challenges I am solving with Ruby and TypeScript
+and to have a reference for future interviews.
 
 ## How to run
 
@@ -38,33 +33,8 @@ docker compose run ruby-test rspec
 docker compose run typescript-test npm test
 ```
 
-## Code coverage
+## Challenges
 
-Ruby Code coverage is supported by [simplecov gem](https://github.com/simplecov-ruby/simplecov)
-and can be found in [coverage-rspec](coverage-rspec/index.html) folder after executing specs
+### [Ruby](docs/challenges.md#ruby)
 
-TypeScript Code coverage is supported by [Jest](https://jestjs.io/)
-and can be found in [coverage-jest](coverage-jest/index.html) folder after executing specs
-
-## Exercises
-
-- Factorial
-- Caesar Cipher
-  - A simple implementation of the basic encryption technique
-  - Supports alphanumeric and special characters in the range a..z, A..Z, 0..9, !..?, µ..ö
-- Longest word calculator
-  - Find longest word in a sentence with a choice of separator, default is a whitespace
-  - Find longest work in a collection (array of words)
-- Hash
-  - Flatten a deeply nested hash with composed keys
-- Number
-  - Round up or down a number to the nearest multiple of given number
-    - For simplicity only tested with integer numbers
-    - Supports both positive and negative number
-    - Separately round up, down or auto
-- Find max consecutive 1's in binary array
-- Count numbers with even number of digits in an array
-- Create sorted array of squares of all integers in given sorted array
-- Duplicate 0's in given array without changing it's size
-- Merge two sorted arrays into a new combined sorted array
-- Delete all instances of given number from an array
+### [TypeScript](docs/challenges.md#typescript)
