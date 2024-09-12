@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/round_to_nearest_multiple'
+require_relative '../../src/random_challenges/round_to_nearest_multiple'
 
 describe RoundToNearestMultiple do
   subject(:round_to_nearest_multiple) { ->(multiple) { described_class.new(multiple) } }

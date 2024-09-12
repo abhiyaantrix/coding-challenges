@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/array_rotation_count'
+require_relative '../../src/random_challenges/array_rotation_count'
 
 describe ArrayRotationCount do
   subject(:array_rotation_count) { ->(array) { described_class.new(array) } }

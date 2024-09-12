@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/delete_from_array'
+require_relative '../../src/random_challenges/delete_from_array'
 
 describe DeleteFromArray do
   subject(:delete_from_array) { ->(nums, num_to_delete) { described_class.all_instances!(nums, num_to_delete) } }

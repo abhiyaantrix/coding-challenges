@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/merge_sorted_arrays'
+require_relative '../../src/random_challenges/merge_sorted_arrays'
 
 describe MergeSortedArrays do
   subject(:merge_sorted_array) { ->(larger_arr, smaller_arr) { described_class.merge(larger_arr, smaller_arr) } }

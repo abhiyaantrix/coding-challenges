@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/sorted_array_of_squares'
+require_relative '../../src/random_challenges/sorted_array_of_squares'
 
 describe SortedArrayOfSquares do
   subject(:sorted_array_of_squares) { ->(sorted_nums) { described_class.call(sorted_nums) } }
