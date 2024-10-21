@@ -1,7 +1,7 @@
 # NOTE: Development only image, git folder is copied in this image for Jest to run watch mode :-(
 
 # Build stage
-FROM node:22-alpine AS build
+FROM node:23-alpine AS build
 
 # Install dependencies for building Node.js packages
 RUN apk --no-cache add --virtual build-dependencies build-base
@@ -16,7 +16,7 @@ COPY package*.json ./
 RUN npm install -g npm@latest && npm install
 
 # Runtime stage
-FROM node:22-alpine
+FROM node:23-alpine
 
 # Install git for Jest to run watch mode :-(
 RUN apk --no-cache add git
