@@ -18,7 +18,7 @@ gem 'solargraph', '~> 0.50.0'
 # Testing
 gem 'rspec', '~> 3.13.0'
 # Library for generating fake data
-gem 'faker', '~> 3.4.2'
+gem 'faker', '~> 3.5.1'
 
 # Code coverage
 gem 'simplecov', '~> 0.22'
