@@ -64,7 +64,7 @@ jobs:
         run: bundle exec rspec
 
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
           directory: ./coverage-rspec
           token: ${{ secrets.CODECOV_TOKEN }}
@@ -91,7 +91,7 @@ jobs:
         run: npm test
 
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
           directory: ./coverage-jest
           token: ${{ secrets.CODECOV_TOKEN }}
